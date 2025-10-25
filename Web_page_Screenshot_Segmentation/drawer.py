@@ -29,7 +29,7 @@ def draw_line(image, heights, color=(0, 0, 255)):
         cv2.line(image, (0, height), (image.shape[1], height), color, 2)
     return image
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--image_file', type=str,
                         help='图片文件路径')
@@ -41,3 +41,7 @@ if __name__ == '__main__':
     color = eval(args.color)
     res = draw_line_from_file(image_file, heights, color)
     print(res)
+
+
+if __name__ == '__main__':
+    main()

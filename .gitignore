@@ -1,4 +1,6 @@
 archive
 imgs
 result
-.idea
+.idea/
+build/
+Web_page_Screenshot_Segmentation.egg-info/

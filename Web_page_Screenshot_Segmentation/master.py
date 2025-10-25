@@ -112,7 +112,7 @@ def batch_process():
         cv2.imwrite('result/' + image_file.split('.')[0] + 'result2.jpg', img)
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--file', type=str,
                         help='path of the image file')
@@ -132,5 +132,9 @@ if __name__ == '__main__':
     res = split_heights(args.file, args.split, args.height_threshold, args.variation_threshold,
                   args.color_threshold, args.color_variation_threshold, args.merge_threshold)
     print(res)
+
+
+if __name__ == '__main__':
+    main()
     # test()
     # batch_process()

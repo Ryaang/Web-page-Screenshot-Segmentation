@@ -69,7 +69,7 @@ def split_and_save_image_pil(img, heights):
 
     return images
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--image_file', '-f',type=str,
                         help='图片文件路径')
@@ -82,3 +82,7 @@ if __name__ == '__main__':
     res = split_and_save_image(image_file, heights,output_dir)
     res = os.path.abspath(res)
     print(res)
+
+
+if __name__ == '__main__':
+    main()

@@ -24,8 +24,13 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/Tim-Saijun/Web_page_Screenshot_Segmentation"
+"Homepage" = "https://github.com/Ryaang/Web-page-Screenshot-Segmentation"
 "Documentation" = "https://tim-saijun.github.io/Web_page_Screenshot_Segmentation/"
+
+[project.scripts]
+screenshot-segment = "Web_page_Screenshot_Segmentation.master:main"
+screenshot-draw = "Web_page_Screenshot_Segmentation.drawer:main"
+screenshot-split = "Web_page_Screenshot_Segmentation.spliter:main"
 
 [tool.setuptools]
 packages = ["Web_page_Screenshot_Segmentation"]
